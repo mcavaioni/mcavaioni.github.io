@@ -2,9 +2,9 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My blog
-subtitle: at FlatIron School
+url: http://mcavaioni.github.io
+title: Mike Cavs' blog
+subtitle: at Flatiron School
 author: Mike Cavs
 simple_search: https://www.google.com/search
 description: This blog describes technical challenges I encountered or lessons learned.
