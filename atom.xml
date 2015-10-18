@@ -4,7 +4,7 @@
   <title><![CDATA[Mike Cavs' blog]]></title>
   <link href="http://mcavaioni.github.io/atom.xml" rel="self"/>
   <link href="http://mcavaioni.github.io/"/>
-  <updated>2015-10-04T15:43:40-04:00</updated>
+  <updated>2015-10-18T17:08:23-04:00</updated>
   <id>http://mcavaioni.github.io/</id>
   <author>
     <name><![CDATA[Mike Cavs]]></name>
@@ -12,6 +12,64 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Going to the Web!]]></title>
+    <link href="http://mcavaioni.github.io/blog/2015/10/18/my-second-post-on-octopress/"/>
+    <updated>2015-10-18T15:05:00-04:00</updated>
+    <id>http://mcavaioni.github.io/blog/2015/10/18/my-second-post-on-octopress</id>
+    <content type="html"><![CDATA[<p>So we wrote our awesome app in Ruby! It does all the things we need: generates data, access that data and spits out a response.
+We also have it written in the MVC schema, where we have:
+- the router: which &ldquo;manages&rdquo; the specific resources and send us to
+- the controllers: which &ldquo;take care&rdquo; of all the actions and have
+- the models: which &ldquo;perform&rdquo; the tasks/methods that they are entitled for.
+- the views: which &ldquo;display&rdquo; any &ldquo;form&rdquo; to the user.</p>
+
+<p>That sounds great but how do I get this great application visible to the public???
+I want other users to access it!
+Oh, great there is this thing called &ldquo;internet&rdquo; that should do the trick!
+&hellip;yeah but how..???
+How can my application receive a request and send a response?
+Let&rsquo;s see how my application interacts with the World Wide Web&hellip;</p>
+
+<p>Here below is an over-simplified flow:</p>
+
+<p><img class="center" src="./images/flow.png" title="" ></p>
+
+<p>When the user sends a request to the server, this comes in the form of a string with several data (such as the get request, URL, user info,..).
+All these data are &ldquo;transformed&rdquo; by rack in the form af a hash which can then be sent to our router.
+Here the flow between the router, controllers and views is the typical MVC flow. What changes is now the view which need to display the response in an html form.
+That&rsquo;s when ERB comes to help.
+ERB is a templating system written in Ruby.
+ERB takes a templating string and some configuration options.</p>
+
+<p>i.e.</p>
+
+<p>string = File.read (&ldquo;app/views/template.html.erb&rdquo;)</p>
+
+<p>Where the file &ldquo;template.html.erb&rdquo; is our view &ldquo;form&rdquo; where the pattern that gets evaluated by ERB is written within &lt;% %> or &lt;%= %> where in addition to evluate this, ERB also displays it.</p>
+
+<p>When the &ldquo;result&rdquo; method is eventually called on the ERB object then all the lines of code containing the specific pattern mentioned above get evaluated with a given &ldquo;binding&rdquo;.
+&ldquo;Binding&rdquo; includes all the Ruby local variables. It basically points to all the local variables that are in my scope.</p>
+
+<p>i.e.</p>
+
+<p>template = ERB.new (string)
+output = template.result(binding)</p>
+
+<p>Finally the response that is sent to the server gets &ldquo;transformed&rdquo; into the form af an array, which contains 3 information:</p>
+
+<p>1- the response code: basically a code that machines use to communicate with eachother (i.e. 200 = everything is ok; 400= there is a problem from the client side; 500= there is a problem from the application side)</p>
+
+<p>2- the header: the content type, explaining how the body shall be interpreted (i.e. JSON, html, text,..)</p>
+
+<p>3- the body: the response!</p>
+
+<p>i.e.</p>
+
+<p>[200, {&ldquo;Content-type&rdquo; => &ldquo;text/html&rdquo;}, [&ldquo;Hello World!!!&rdquo;]]</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Everything Is an Object - Array Method REPLACE.]]></title>
