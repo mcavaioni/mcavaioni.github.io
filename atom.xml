@@ -4,7 +4,7 @@
   <title><![CDATA[Mike Cavs' blog]]></title>
   <link href="http://mcavaioni.github.io/atom.xml" rel="self"/>
   <link href="http://mcavaioni.github.io/"/>
-  <updated>2015-10-19T12:03:58-04:00</updated>
+  <updated>2015-10-19T12:11:15-04:00</updated>
   <id>http://mcavaioni.github.io/</id>
   <author>
     <name><![CDATA[Mike Cavs]]></name>
@@ -34,10 +34,10 @@ Let&rsquo;s see how my application interacts with the World Wide Web&hellip;</p>
 
 <p>Here below is an over-simplified flow:</p>
 
-<p><img src="../source/images/flow.png" /></p>
+<!-- <img src="source/images/flow.png" /> -->
 
-<!-- <img class="center" src="./images/flow.png" title="" > -->
 
+<p><img class="center" src="http://mcavaioni.github.io/images/flow.png" title="" ></p>
 
 <p>When the user sends a request to the server, this comes in the form of a string with several data (such as the get request, URL, user info,..).
 All these data are &ldquo;transformed&rdquo; by rack in the form af a hash which can then be sent to our router.
