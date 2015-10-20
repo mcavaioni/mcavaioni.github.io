@@ -23,7 +23,7 @@ Let's see how my application interacts with the World Wide Web...
 Here below is an over-simplified flow:
 
 <!-- <img class="center" src="http://imgur.com/LjY6U7a"> -->
-{% img center http://imgur.com/LjY6U7a  %}
+{% img center ./images/flow.png  %}
 
 
 When the user sends a request to the server, this comes in the form of a string with several data (such as the get request, URL, user info,..).
