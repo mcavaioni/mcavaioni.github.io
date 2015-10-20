@@ -24,7 +24,7 @@ Here below is an over-simplified flow:
 
 <!-- <img class="center" src="http://imgur.com/LjY6U7a" /> -->
 
-<img src = "/images/flow.png">
+<img src = "http://imgur.com/LjY6U7a">
 <!-- <img src="{{octopress/source/images}}/images/flow.png" /> -->
 
 
