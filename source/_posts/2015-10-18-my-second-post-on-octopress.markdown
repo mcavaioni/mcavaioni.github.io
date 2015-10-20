@@ -23,7 +23,8 @@ Let's see how my application interacts with the World Wide Web...
 Here below is an over-simplified flow:
 
 <!-- <img class="center" src="http://imgur.com/LjY6U7a" /> -->
-{% img center ./images/flow.png  %}
+
+<img src = "/images/flow.png">
 <!-- <img src="{{octopress/source/images}}/images/flow.png" /> -->
 
 
