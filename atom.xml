@@ -4,7 +4,7 @@
   <title><![CDATA[Mike Cavs' blog]]></title>
   <link href="http://mcavaioni.github.io/atom.xml" rel="self"/>
   <link href="http://mcavaioni.github.io/"/>
-  <updated>2015-10-20T14:34:25-04:00</updated>
+  <updated>2015-10-20T14:35:36-04:00</updated>
   <id>http://mcavaioni.github.io/</id>
   <author>
     <name><![CDATA[Mike Cavs]]></name>
@@ -37,7 +37,7 @@ Let&rsquo;s see how my application interacts with the World Wide Web&hellip;</p>
 <!-- <img class="center" src="http://imgur.com/LjY6U7a" /> -->
 
 
-<p><img src = "./images/flow.png"></p>
+<p><img src = "http://mcavaioni.github.io/images/flow.png"></p>
 
 <!-- <img src="http://mcavaioni.github.io/images/flow.png" /> -->
 
