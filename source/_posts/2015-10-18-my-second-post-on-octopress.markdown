@@ -22,9 +22,9 @@ Let's see how my application interacts with the World Wide Web...
 
 Here below is an over-simplified flow:
 
-<!-- <img class="center" src="http://imgur.com/LjY6U7a"> -->
-{% img center ./images/flow.png  %}
-
+<img class="center" src="http://imgur.com/LjY6U7a" alt="my picture">
+<!-- {% img center ./images/flow.png  %}
+<img src="{{octopress/source/images}}/images/flow.png" /> -->
 
 When the user sends a request to the server, this comes in the form of a string with several data (such as the get request, URL, user info,..).
 All these data are "transformed" by rack in the form af a hash which can then be sent to our router.
