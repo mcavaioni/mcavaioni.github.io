@@ -4,7 +4,7 @@
   <title><![CDATA[Mike Cavs' blog]]></title>
   <link href="http://mcavaioni.github.io/atom.xml" rel="self"/>
   <link href="http://mcavaioni.github.io/"/>
-  <updated>2015-10-21T22:05:07-04:00</updated>
+  <updated>2015-11-08T19:03:09-05:00</updated>
   <id>http://mcavaioni.github.io/</id>
   <author>
     <name><![CDATA[Mike Cavs]]></name>
@@ -12,6 +12,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Mr. Null]]></title>
+    <link href="http://mcavaioni.github.io/blog/2015/11/08/my-third-one/"/>
+    <updated>2015-11-08T18:28:43-05:00</updated>
+    <id>http://mcavaioni.github.io/blog/2015/11/08/my-third-one</id>
+    <content type="html"><![CDATA[<p>Last week Wired magazine had an interesting article, with the title of: &ldquo;Hello, I’m Mr. Null. My Name Makes Me Invisible to Computers&rdquo;.</p>
+
+<p><img src="http://imgur.com/nG6basc.png"></p>
+
+<p>Few weeks ago this article would have not attracted my attention, but now that I&rsquo;ve been dealing with the exciting world of coding, it totally got my attention and interest!</p>
+
+<p>For &ldquo;common&rdquo; people this seems like a silly problem, but knowing a little bit how &ldquo;NULL&rdquo; comes into play in programming languages, it appears to be a pitfall taht programmers should take in consideration.
+&ldquo;NULL&rdquo; is normally used to ensure taht a data field is not empty, so it;s often rejected as an input in a web form.
+Simply:</p>
+
+<p> if lastname == null then &hellip;</p>
+
+<p>But if the lastname is really &ldquo;Null&rdquo; then it becomes a problem.
+Well, most website have a workaround to this, but others loop back to the input screen, telling the user to re-type the last name&hellip;</p>
+
+<p>I searched online and found that this problem turns out to be pretty common! and even larger corporations have had issues dealing with this &ldquo;dilemma&rdquo;.</p>
+
+<p><img src = "http://imgur.com/Olv0PN8.png" ></p>
+
+<p><img src = "http://imgur.com/XV0ViZG.png" ></p>
+
+<p>Based on my little experience I found it pretty unrealistic as &ldquo;null&rdquo; is quite different from null..being the first one a string.
+But apparently the problem exists when it isn&rsquo;t from user input but from a dump of a legacy system sometimes created in the 80&rsquo;s.</p>
+
+<p>Some of those systems just dump text and interpret the string &ldquo;null&rdquo; into NULL and transfering those data into a database, causing the above mentioned problem.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Going to the Web!]]></title>
